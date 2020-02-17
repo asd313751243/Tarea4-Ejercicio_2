@@ -1,0 +1,23 @@
+﻿@model Valores
+@{
+    ViewData["Title"] = "Home Page";
+}
+
+<form asp-action="Index" method="post">
+    <p class="h2">Introducir 10 numeros</p>
+    <div class="input-group mb-3">
+        <div class="input-group-prepend">
+            <input asp-for="numero0" type="number" class="form-control" required aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
+            <input asp-for="numero1" type="number" class="form-control" required aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
+            <input asp-for="numero2" type="number" class="form-control" required aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
+            <input asp-for="numero3" type="number" class="form-control" required aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
+            <input asp-for="numero4" type="number" class="form-control" required aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
+            <input asp-for="numero5" type="number" class="form-control" required aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
+            <input asp-for="numero6" type="number" class="form-control" required aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
+            <input asp-for="numero7" type="number" class="form-control" required aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
+            <input asp-for="numero8" type="number" class="form-control" required aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
+            <input asp-for="numero9" type="number" class="form-control" required aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
+        </div>
+    </div>
+    <input class="btn btn-primary" type="submit" value="Generar Tabla">
+</form>
